@@ -33,7 +33,12 @@ public class PersonDAOImpl implements PersonDAO {
 
 	@Override
 	public void deletePerson(int id) {
-		// TODO Auto-generated method stub
+		Session session = sessionfactory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.delete(id);
+		tx.commit();
+		session.close();
+       
 		
 	}
 
