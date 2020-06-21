@@ -34,4 +34,13 @@ public class PersonController {
 		
 	}
 
+	@RequestMapping(value= "/person/id", method = RequestMethod.POST)
+	public String ListPerson(int id){
+		
+		personservice.UpdatedPerson();
+		
+		return "redirect/person";
+		
+		
+	}
 }
