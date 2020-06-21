@@ -28,6 +28,7 @@ public class PersonDAOImpl implements PersonDAO {
 	@Override
 	public void updatePerson() {
 		// TODO Auto-generated method stub
+		System.out.println("enter updated person method");
 		
 	}
 

@@ -36,7 +36,8 @@ public class PersonController {
 
 	@RequestMapping(value= "/person/id", method = RequestMethod.POST)
 	public String ListPerson(int id){
-		
+		System.out.println("enter updated person method");
+
 		personservice.UpdatedPerson();
 		
 		return "redirect/person";
