@@ -23,5 +23,15 @@ public class PersonController {
 		
 		
 	}
+	
+	@RequestMapping(value= "/person/id", method = RequestMethod.POST)
+	public String deletePerson(int id){
+		
+		personservice.deletePerson(id);
+		
+		return "redirect/person";
+		
+		
+	}
 
 }
